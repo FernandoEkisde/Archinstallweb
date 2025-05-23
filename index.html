@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Guía completa para la instalación de Arch Linux utilizando la herramienta archinstall, facilitando el proceso para usuarios nuevos y avanzados." />
+  <title>Arch Linux - Guía de instalación con Archinstall</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cortina con logo animado y accesibilidad -->
+  <div id="loader" role="alert" aria-busy="true" aria-live="assertive">
+    <img src="/img/arch loho.png" alt="">
+    <h1>FArchlinux</h1>
+  </div>
+
+  <main>
+    <header class="main-header">
+      <div class="header-content container">
+        <div class="text-section">
+          <h1>Guía de instalación de Arch Linux</h1>
+          <p class="creator">Creado por <strong>Fernando Ibañez</strong></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <h2>Introducción</h2>
+      <p>
+        Muchas personas consideran que instalar Arch Linux es complicado debido a su proceso manual.
+        Sin embargo, existe una herramienta llamada <strong>archinstall</strong> que simplifica
+        considerablemente la instalación, haciéndola accesible incluso para quienes no tienen tanta experiencia.
+        En esta guía te enseñaré cómo utilizar archinstall de forma básica y sin errores.
+      </p>
+      <p>
+        Nota: No abordaré el sistema de particionado de discos para configuraciones como dual boot,
+        ya que eso depende del objetivo del usuario final. Aun así, cabe destacar que su funcionamiento
+        es similar al de otras herramientas de particionado, con la diferencia de que archinstall utiliza
+        una interfaz en modo texto (TUI) en lugar de una interfaz gráfica (GUI).
+      </p>
+    </section>
+
+    <section class="container">
+      <h2>Pasos para la instalación</h2>
+      <p>
+        Empecé con la instalación de Arch Linux corriendo una máquina virtual, en la cual me aseguré
+        de actualizar archinstall con <code>pacman -Sy archinstall</code>.
+      </p>
+      <figure>
+        <img src="img/Cap1.png" alt="Captura de pantalla del proceso de instalación de Arch Linux" />
+        <figcaption>Interfaz de archinstall durante la instalación</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <script>
+    window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+
+  // Al cargar la página, puedes mantener la cortina visible o ocultarla automáticamente
+  // loader.classList.add('hidden');  // Si quieres ocultarla automáticamente al cargar, descomenta esta línea
+
+  // Ocultar la cortina al hacer click en ella
+  loader.addEventListener('click', () => {
+    loader.classList.add('hidden');
+  });
+});
+
+  </script>
+</body>
+</html>
